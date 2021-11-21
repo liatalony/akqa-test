@@ -1,0 +1,228 @@
+:root{
+    --blue-text: #00609C;
+    --gray-1: #E6E7E8;
+    --gray-2: #EEEEEE; 
+    --purple: #C017A2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: SourceSansPr, sans-serif;
+}
+
+div.logo-search{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 1.2em 150px;
+}
+section{
+    width: 100%;
+    padding: 1.2em 150px;
+}
+
+.extra{
+    height: inherit;
+    width: 100%;
+    background-color: #09101B;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.content:nth-child(even){
+    background-color: var(--gray-2);
+}
+
+.text{
+    width: 400px;
+}
+
+.content h2, .content h3{
+    color: var(--blue-text);
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.content h3{
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.content p{
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.first-section{
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-color: #09101B;
+}
+
+
+.first-section img{
+margin-left: auto;
+}
+
+/* .content.first-section .text{
+    z-index: 2;
+    margin: 65px 150px;
+} */
+
+.content.first-section .text h2{
+    color: white;
+}
+
+.overlay{position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 405px;
+    background: linear-gradient(180deg, rgba(9,16,27,1) 0%, rgba(9,16,27,1)20%, rgba(9,16,27,0)40%, rgba(9,16,27,0)100%);
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: left;
+    padding: 1.2em 150px;
+}
+
+nav a{
+    margin-right: 2em;
+    color: black;
+}
+.hidden{
+    display: none;
+}
+
+a{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+h3{
+    color: var(--blue-text);
+}
+
+.second, .third, .fourth, .fifth{
+    padding: 65px 0;
+    width: 100%;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.second .text{
+    margin-top: 65px;
+    width: 500px;
+}
+.detail{
+    width: 250px;
+    max-width: 100%;
+    margin: 2rem;
+}
+
+.detail .text{
+    width: 250px;
+    max-width: 100%;  
+}
+
+.fourth{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fifth{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--gray-1);
+    margin: auto;
+}
+
+.article .text{
+    width: 550px;
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.video_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 500px;
+    max-width: 100%;
+    margin: 2rem;
+}
+
+.sixth{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.video_container .image{
+    margin-right: 1rem;
+}
+
+@media all and (min-width: 650px) {
+    .second, .third, .fourth, .fifth{
+        padding: 65px 150px;
+        width: 100%;
+    }
+
+    .overlay{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        height: 405px;
+        background: linear-gradient(90deg, rgba(9,16,27,1) 0%, rgba(9,16,27,1)20%, rgba(9,16,27,0)40%, rgba(9,16,27,0)100%);
+    }
+
+    .content.first-section .text{
+        position: absolute;
+        z-index: 2;
+        margin: 65px 150px;
+    }
+}
